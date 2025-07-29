@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR Web Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OCR Web Application</h1>
+    <form id="ocrForm" enctype="multipart/form-data">
+      <input type="file" id="imageInput" name="image" accept="image/*" required>
+      <button type="submit">Extract Text</button>
+    </form>
+
+    <div id="result">
+      <h3>Extracted Text:</h3>
+      <p id="extractedText">No text extracted yet.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
